@@ -9,5 +9,7 @@ copyButton.addEventListener("click",()=>{
     const text = inputField.value
     inputField.select();
     navigator.clipboard.writeText(text)
+    inputField.value="text copied";
+    setTimeout(()=>inputField.value=text,2000)
 })
 
